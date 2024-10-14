@@ -52,6 +52,10 @@ vim.diagnostic.config({
 local cmp = require('cmp')
 
 cmp.setup({
+	preselect = 'item',
+	completion = {
+    completeopt = 'menu,menuone,noinsert'
+  },
   sources = {
     {name = 'nvim_lsp'},
   },
@@ -62,8 +66,8 @@ cmp.setup({
     end,
   },
   mapping = cmp.mapping.preset.insert({
-		['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
-		['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
-		['<C-y>'] = cmp.mapping.confirm({ select = true }),
+		['<S-j>'] = cmp.mapping.select_next_item(cmp_select),
+		['<S-k>'] = cmp.mapping.select_prev_item(cmp_select),
+		['<CR>'] = cmp.mapping.confirm({ select = true }),
 	}),
 })
