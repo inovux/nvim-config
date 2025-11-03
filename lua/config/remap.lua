@@ -4,4 +4,5 @@ vim.opt.tabstop = 2
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
-vim.opt.termguicolors = true
+vim.keymap.set("n", "<C-d>", "<C-d>M")
+vim.keymap.set("n", "<C-u>", "<C-u>M")
