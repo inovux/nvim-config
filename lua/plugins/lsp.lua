@@ -4,9 +4,11 @@ return {
 		ensure_installed = {
 			"lua_ls",
 			"ts_ls",
-			"eslint",
+			"stylua",
+			"eslint_d",
 			"cssls",
 			"tailwindcss",
+			"prettier",
 		},
 	},
 	dependencies = {

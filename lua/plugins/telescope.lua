@@ -16,6 +16,7 @@ return {
 
 			vim.keymap.set('n', '<C-e>', builtin.oldfiles, { desc = 'Telescope find files' })
 			vim.keymap.set('n', '<C-f>', builtin.live_grep, { desc = 'Telescope live grep' })
+			vim.keymap.set('n', 'F', builtin.find_files, { desc = 'Telescope live grep' })
 		end
 	},
 	{
